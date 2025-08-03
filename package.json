@@ -1,0 +1,29 @@
+{
+  "name": "mcp-cookies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test/run-all-tests.js",
+    "test:fast": "npm run test:mock && npm run test:integration",
+    "test:mock": "node test/cookie-mock-test.js",
+    "test:integration": "node test/integration-tests.js",
+    "test:behavioral": "node test/behavioral-tests.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@mherod/get-cookie": "^2.1.3",
+    "@modelcontextprotocol/sdk": "^1.17.1",
+    "chrome-cookies-secure": "^3.0.0",
+    "default-browser": "^5.2.1",
+    "node-fetch": "^3.3.2",
+    "open": "^8.4.2",
+    "puppeteer": "^24.15.0",
+    "sqlite3": "^5.1.7",
+    "winreg": "^1.2.5"
+  }
+}
